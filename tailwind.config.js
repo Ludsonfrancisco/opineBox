@@ -8,9 +8,12 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'ruim':"url('/ruim.png')"
+        'fundo-top':"url('/bg-top.png')",
+        'ruim':"url('/ruim.png')",
+        'fundo-bottom': "url('/bg-bottom.png')"
       },
       backgroundSize:{
+        '1-2':'50%',
         '1-4': '25%',
         '1-10': '10%'
       }
