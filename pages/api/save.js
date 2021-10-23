@@ -45,7 +45,8 @@ export default async (req, res) => {
       Nota: parseInt(data.Nota),
       'Data Preechimento': moment().format('DD/MM/YYYY HH:mm:ss'),
       Cupom,
-      Promo
+      Promo,
+      Mensagem: data.Mensagem
     })
     res.end(JSON.stringify({
       showCoupon: Cupom !== '',
