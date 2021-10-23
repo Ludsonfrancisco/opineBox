@@ -12,7 +12,7 @@ const Index = () => {
     <div>
        {!data && <p>Carregando...</p>}
       {!error && data && data.showCoupon &&
-        <p className='mt-12 mb-16 text-center mx-10 '>
+        <p className='mt-12 text-center mx-10 '>
           {data.message}
         </p>
       }
@@ -21,7 +21,7 @@ const Index = () => {
         O restaurante X sempre busca por atender melhor seus clientes.<br />
         Por isso, estamos sempre abertos a ouvir a sua opinião.
       </p> */}
-      <div className='text-center my-20'>
+      <div className='text-center my-24'>
         <Link href='/pesquisa'>
           <a className='text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 px-12 py-4 rounded-lg font-bold shadow-lg hover:shadow'>Dar opinião ou sujestão</a>
         </Link>
