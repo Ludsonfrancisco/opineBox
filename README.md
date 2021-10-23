@@ -2,7 +2,7 @@
 ![](https://komarev.com/ghpvc/?username=ludsonfrancisco&color=blue)
 
 
-Projeto Palpite Box 
+Projeto Opine Box 
 
 # Star Projeto
 
@@ -23,6 +23,4 @@ Criamos o layout ultilizando o Figma. Você pode encontrar o arquivo [aqui](http
 ## Autor 
 * **Ludson Francisco** - [Linkedin](https://www.linkedin.com/in/ludsonfrancisco/).
 
-## Acknowledgmenst
 
-* Este projeto foi construído durante o curso FullStack Master do [DevPleno](https://devpleno.com).
