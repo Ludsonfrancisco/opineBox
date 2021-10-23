@@ -11,7 +11,7 @@ Projeto Opine Box
 
 ## Layout:
 
-Criamos o layout ultilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/HxvAYhS6l7UDI49u8uLdaC/palpite-box?node-id=0%3A1).
+Criamos o layout ultilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/MuEdYz8UegEh4PjvgJF47S/Untitled?node-id=5%3A11).
 
 ## Contruído com:
 
