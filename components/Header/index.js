@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <div className='bg-fundo-top bg-no-repeat bg-right-top p-4 bg-1-4'>
-        <h1 className='mb-8 mt-4 text-center text-3xl font-bold'>OpineBox</h1>
+        <h1 className='mb-8 mt-16 text-center text-3xl font-bold'>OpineBox</h1>
         <div className='container mx-auto'>
           <Link href='/'>
             <img className='cursor-pointer mx-auto' src='/logo-ob.png' alt='Palpite Box' />
