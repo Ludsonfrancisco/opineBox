@@ -45,26 +45,45 @@ const Pesquisa = () => {
         Por isso, estamos sempre abertos a ouvir a sua opinião.</p>
       {!sucess && <div className=' w-4/5 lg:w-1/5 mx-auto'>
         <label className='font-bold pp:hidden'>Seu nome:</label>
-        <input className='pp:mb-5 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-blue-100 my-2 rounded' type='text' placeholder='Digite seu Nome' onChange={onChange} name='Nome' value={form.Nome} />
+        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu Nome' onChange={onChange} name='Nome' value={form.Nome} />
         <label className='font-bold pp:hidden'>Seu E-mail:</label>
-        <input className='pp:mb-5 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-blue-100 my-2 rounded' type='text' placeholder='Digite seu E-mail' onChange={onChange} name='Email' value={form.Email} required />
+        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ri-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu E-mail' onChange={onChange} name='Email' value={form.Email} required />
         <label className='font-bold pp:hidden'>Seu Whatsapp:</label>
-        <input className='pp:mb-5 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-blue-100 my-2 rounded' type='text' placeholder='Digite seu Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
         <label className='font-bold leading-none tracking-tight	'>Que nota você daria para o <br />estabelecimento:</label>
 
 
-        <div className='flex justify-center pt-4  pb-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent '>
+        {/* <div className='flex justify-center pt-4  pb-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent '>
           {notas.map(nota => {
             return (<label className='block w-8 text-left'>
               {nota} <br />
-              <input type='radio' src='' name='Nota' value={nota} onChange={onChange} />
+              <input className='' type='radio' src='' name='Nota' value={nota} onChange={onChange} />
+              <img src='/ruim.png' className='w-8 text-left ' />
             </label>)
 
           })}
 
-        </div>
+        </div> */}
+
+        <div className='flex pt-4 justify-center space-x-4 mt-6  pb-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent '>
+          <label className='flex flex-col items-center w-14 text-sm '>
+           <div className='border border-transparent  hover:border-red-700 rounded-full'><input className='hidden ' type='radio' name='Nota' value='1' onChange={onChange}/><img src='/ruim.png' className='motion-safe:hover:scale-110  w-10 text-center cursor-pointer' /></div>Péssimo<br/>
+          </label>
+          <label className='flex flex-col items-center w-14 text-sm'>
+            <input className='hidden' type='radio' name='Nota' value='2' onChange={onChange} /><img src='/ruim.png' className='w-10 text-center cursor-pointer' />Ruim<br/>
+          </label>
+          <label className='flex flex-col items-center w-14 text-sm'>
+            <input className='hidden' type='radio' name='Nota' value='3' onChange={onChange} /><img src='/ruim.png' className='w-10 text-center cursor-pointer' />Regular<br/>
+          </label>
+          <label className='flex flex-col items-center w-14 text-sm'>
+            <input className='hidden' type='radio' name='Nota' value='4' onChange={onChange} /><img src='/ruim.png' className='w-10 text-center cursor-pointer' />Bom<br/>
+          </label>
+          <label className='flex flex-col items-center w-14 text-sm'>
+            <input className='hidden' type='radio' name='Nota' value='5' onChange={onChange} /><img src='/ruim.png' className='w-10 text-center cursor-pointer' />Ótimo<br/>
+          </label>
+        </div>    
         <label className='font-bold pp:hidden'>Sua opinião:</label>
-        <textarea className='pp:mb-5 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-blue-100 my-2 rounded' rows='4' cols='25' type='text' placeholder='Digite sua opinião' onChange={onChange} name='Mensagem' value={form.Mensagem} />
+        <textarea className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-whtie-100 my-2 rounded-tr-lg' rows='4' cols='25' type='text' placeholder='Digite sua opinião' onChange={onChange} name='Mensagem' value={form.Mensagem} />
 
         <button className='text-white w-full mb-6 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 px-12 py-5 mt-6 rounded-lg font-bold shadow-xl hover:shadow ' onClick={save}>Enviar</button>
       </div>}

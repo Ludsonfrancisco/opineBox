@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <React.Fragment>
-      <div className='bg-fundo-top bg-no-repeat bg-right-top p-4 bg-1-4'>
+      <div className='pp:bg-fundo-top bg-no-repeat bg-right-top p-4 bg-1-4'>
         <h1 className='mb-8 mt-16 text-center text-3xl font-bold'>OpineBox</h1>
         <div className='container mx-auto'>
           <Link href='/'>
