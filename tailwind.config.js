@@ -10,7 +10,8 @@ module.exports = {
       backgroundImage: {
         'fundo-top':"url('/bg-top.png')",
         'ruim':"url('/ruim.png')",
-        'fundo-bottom': "url('/bg-bottom.png')"
+        'fundo-bottom': "url('/bg-bottom.png')",
+        // 'fundo-pesquisa': "url('/bg-pesquisa.png')"
       },
       backgroundSize:{
         '1-2':'50%',

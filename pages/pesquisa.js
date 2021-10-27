@@ -67,21 +67,21 @@ const Pesquisa = () => {
 
         <div className='flex pt-4 justify-center space-x-2 mt-6  pb-6 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent '>
           <label className='flex flex-col items-center w-14 text-xs '>
-           <div className='border border-transparent  hover:border-red-700 rounded-full'><input className='hidden ' type='radio' name='Nota' value='1' onChange={onChange}/><img src='/pessimo.png' className='motion-safe:hover:scale-110 w-12 text-center cursor-pointer' /></div>Péssimo<br/>
+            <div className='border-4 border-transparent  hover:border-red-700 rounded-full'><input className='hidden ' type='radio' name='Nota' value='1' onChange={onChange} /><img src='/pessimo.png' className='motion-safe:hover:scale-110 w-12 text-center cursor-pointer' /></div>Péssimo<br />
           </label>
           <label className='flex flex-col items-center w-14 text-xs'>
-            <input className='hidden' type='radio' name='Nota' value='2' onChange={onChange} /><img src='/ruim.png' className='w-12 text-center cursor-pointer' />Ruim<br/>
+            <div className='border-4 border-transparent  hover:border-yellow-700 rounded-full'><input className='hidden' type='radio' name='Nota' value='2' onChange={onChange} /><img src='/ruim.png' className='w-12 text-center cursor-pointer' /></div>Ruim<br />
           </label>
           <label className='flex flex-col items-center w-14 text-xs'>
-            <input className='hidden' type='radio' name='Nota' value='3' onChange={onChange} /><img src='/regular.png' className='w-12 text-center cursor-pointer' />Regular<br/>
+            <div className='border-4 border-transparent  hover:border-yellow-400 rounded-full'><input className='hidden' type='radio' name='Nota' value='3' onChange={onChange} /><img src='/regular.png' className='w-12 text-center cursor-pointer' /></div>Regular<br />
           </label>
           <label className='flex flex-col items-center w-14 text-xs'>
-            <input className='hidden' type='radio' name='Nota' value='4' onChange={onChange} /><img src='/bom.png' className='w-12 text-center cursor-pointer' />Bom<br/>
+            <div className='border-4 border-transparent  hover:border-green-700 rounded-full'><input className='hidden' type='radio' name='Nota' value='4' onChange={onChange} /><img src='/bom.png' className='w-12 text-center cursor-pointer' /></div>Bom<br />
           </label>
           <label className='flex flex-col items-center w-14 text-xs'>
-            <input className='hidden' type='radio' name='Nota' value='5' onChange={onChange} /><img src='/otimo.png' className='w-12 text-center cursor-pointer' />Ótimo<br/>
+            <div className='border-4 border-transparent  hover:border-green-400 rounded-full'><input className='hidden' type='radio' name='Nota' value='5' onChange={onChange} /><img src='/otimo.png' className='w-12 text-center cursor-pointer' /></div>Ótimo<br />
           </label>
-        </div>    
+        </div>
         <label className='font-bold pp:hidden'>Sua opinião:</label>
         <textarea className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-whtie-100 my-2 rounded-tr-lg' rows='4' cols='25' type='text' placeholder='Digite sua opinião' onChange={onChange} name='Mensagem' value={form.Mensagem} />
 
