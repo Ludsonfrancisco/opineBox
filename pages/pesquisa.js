@@ -39,15 +39,15 @@ const Pesquisa = () => {
 
 
 
-      <PageTitle title='Pesquisea ' />
+      <PageTitle title='Pesquisa ' />
       <h1 className='text-center font-bold mb-4 text-2xl'>Críticas e sugestões</h1>
       <p className='text-center mb-6 text-sm px-2'>O restaurante X sempre busca por atender melhor seus clientes.<br />
         Por isso, estamos sempre abertos a ouvir a sua opinião.</p>
       {!sucess && <div className=' w-4/5 lg:w-1/5 mx-auto'>
         <label className='font-bold pp:hidden'>Seu nome:</label>
-        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu Nome' onChange={onChange} name='Nome' value={form.Nome} />
+        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu Nome' onChange={onChange} name='Nome' value={form.Nome} />
         <label className='font-bold pp:hidden'>Seu E-mail:</label>
-        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ri-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu E-mail' onChange={onChange} name='Email' value={form.Email} required />
+        <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu E-mail' onChange={onChange} name='Email' value={form.Email} required />
         <label className='font-bold pp:hidden'>Seu Whatsapp:</label>
         <input className='pp:mb-5 border border-purple-400 placeholder-gray-900 placeholder-opacity-25 pp:placeholder-opacity-75 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent  w-full p-4 block shadow bg-white-100 my-2 rounded-tr-lg' type='text' placeholder='Digite seu Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
         <label className='font-bold leading-none tracking-tight	'>Que nota você daria para o <br />estabelecimento:</label>

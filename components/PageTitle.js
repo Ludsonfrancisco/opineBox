@@ -3,9 +3,9 @@ import Head from 'next/head'
 
 
 const PageTitle = ({ title }) => {
-    return ( 
+    return (
         <Head>
-            <title>{title} - PalpiteBox</title>
+            <title>{title} - OpineBox</title>
         </Head>
     )
 }
